@@ -1,0 +1,52 @@
+/* Contacto — formulario y alertas */
+.contact-form {
+  max-width: 600px;
+  margin: 2rem auto 0;
+}
+
+.contacto-note {
+  font-size: 0.95rem;
+}
+
+.contacto-note a {
+  color: var(--accent);
+}
+
+.btn-submit {
+  border-color: var(--accent);
+  background: var(--accent);
+}
+
+.btn-submit:hover {
+  background: transparent;
+  color: var(--accent);
+}
+
+.alert-error {
+  background: #ffebee;
+  border-color: #c62828;
+  color: #b71c1c;
+}
+
+.alert-error a {
+  color: inherit;
+}
+
+.alert {
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  border: 1px solid;
+}
+
+.alert-success {
+  background: #e8f5e9;
+  border-color: #2e7d32;
+  color: #1b5e20;
+}
+
+.alert-info {
+  background: #e3f2fd;
+  border-color: #1565c0;
+  color: #0d47a1;
+}
