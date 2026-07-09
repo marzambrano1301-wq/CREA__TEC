@@ -1,0 +1,49 @@
+/* Nosotros — equipo editorial */
+.nosotros-text {
+  font-size: 0.95rem;
+  text-align: justify;
+}
+
+.team-title {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.team-member {
+  text-align: center;
+  border: 1px solid var(--rule);
+  padding: 1rem;
+}
+
+.team-member .avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--paper-dark);
+  margin: 0 auto 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border: 2px solid var(--rule);
+}
+
+.team-member h4 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 0.25rem;
+}
+
+.team-member p {
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+}

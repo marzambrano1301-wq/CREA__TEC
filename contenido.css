@@ -1,0 +1,49 @@
+/* Contenido — módulos SENA */
+.contenido-module .topic-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.contenido-module .topic-icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.contenido-module h3 {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.article-image {
+  margin: 0.5rem 0 0.75rem;
+}
+
+.article-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border: 1px solid var(--rule);
+}
+
+.article-video {
+  margin: 0.75rem 0;
+}
+
+.article-video video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: var(--paper-dark);
+  border: 1px solid var(--rule);
+  object-fit: cover;
+}
+
+.article-video-intro {
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+}

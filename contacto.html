@@ -1,22 +1,50 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>El Audiovisual — Contacto</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="components/layout/layout.css">
-  <link rel="stylesheet" href="components/contacto/contacto.css">
-</head>
-<body data-page="contacto">
-  <div class="newspaper">
-    <div id="header-slot"></div>
-    <div id="content-slot"></div>
-    <div id="footer-slot"></div>
+<h2 class="page-headline">
+  Contacto
+  <span>Escríbenos — Estamos atentos a tus mensajes</span>
+</h2>
+
+<div class="columns columns-2">
+  <div class="section-block">
+    <h3>Información de contacto</h3>
+    <ul>
+      <li>📧 <strong>Correo:</strong> <a href="mailto:somoscreatecperiodico@gmail.com">somoscreatecperiodico@gmail.com</a></li>
+      <li>📍 <strong>Ubicación:</strong> Centro de Formación SENA</li>
+      <li>🕐 <strong>Horario:</strong> Lun — Vie, 8:00 a.m. — 5:00 p.m.</li>
+      <li>📱 <strong>WhatsApp:</strong> <a href="https://wa.me/573115403923" target="_blank" rel="noopener">Escríbenos directamente</a></li>
+      <li>📸 <strong>Instagram:</strong> <a href="https://www.instagram.com/createc.periodico?igsh=M3BjbDRmZ3FkMTFo" target="_blank" rel="noopener">@createc.periodico</a></li>
+    </ul>
   </div>
-  <script src="components/layout/layout.js"></script>
-  <script src="components/contacto/contacto.js"></script>
-</body>
-</html>
+
+  <div class="section-block">
+    <h3>¿Tienes una noticia?</h3>
+    <p class="contacto-note">
+      Si deseas enviar material para publicar en el periódico, usa el formulario o visita la sección de <a href="index.html">Inicio</a> para publicar directamente.
+    </p>
+  </div>
+</div>
+
+<form class="contact-form" id="contact-form">
+  <div id="contact-alert"></div>
+  <div class="form-row">
+    <div class="form-group">
+      <label for="contact-name">Nombre completo</label>
+      <input type="text" id="contact-name" required placeholder="Tu nombre">
+    </div>
+    <div class="form-group">
+      <label for="contact-email">Correo electrónico</label>
+      <input type="email" id="contact-email" required placeholder="tu@correo.com">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="contact-subject">Asunto</label>
+    <input type="text" id="contact-subject" required placeholder="Ej: Consulta sobre animación">
+  </div>
+  <div class="form-group">
+    <label for="contact-message">Mensaje</label>
+    <textarea id="contact-message" required placeholder="Escribe tu mensaje aquí..."></textarea>
+  </div>
+  <div class="form-actions">
+    <button type="submit" class="btn btn-submit">Enviar mensaje</button>
+    <button type="reset" class="btn btn-outline">Limpiar</button>
+  </div>
+</form>

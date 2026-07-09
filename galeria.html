@@ -1,22 +1,83 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>El Audiovisual — Galería</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="components/layout/layout.css">
-  <link rel="stylesheet" href="components/galeria/galeria.css">
-</head>
-<body data-page="galeria">
-  <div class="newspaper">
-    <div id="header-slot"></div>
-    <div id="content-slot"></div>
-    <div id="footer-slot"></div>
-  </div>
-  <script src="components/layout/layout.js"></script>
-  <script src="components/galeria/galeria.js"></script>
-</body>
-</html>
+<h2 class="page-headline">
+  Galería visual
+  <span>Imágenes de nuestros proyectos audiovisuales</span>
+</h2>
+
+<p class="lead-text">
+  Una selección de trabajos y referencias de fotografía, animación y edición realizados durante nuestro aprendizaje en el SENA.
+</p>
+
+<div class="columns columns-2">
+  <article class="article">
+    <div class="article-meta"><span class="tag">Fotografía</span></div>
+    <h3 class="article-title">Encuadre y composición</h3>
+    <div class="article-body">
+      <p>La regla de los tercios, las líneas guía y el balance visual son principios fundamentales que aplicamos en cada sesión fotográfica.</p>
+    </div>
+  </article>
+
+  <article class="article">
+    <div class="article-meta"><span class="tag">Animación</span></div>
+    <h3 class="article-title">Secuencias de cuadros</h3>
+    <div class="article-body">
+      <p>Cada proyecto de animación comienza con un storyboard: bocetos que planifican el movimiento antes de animar.</p>
+    </div>
+  </article>
+</div>
+
+<div class="gallery-grid">
+  <figure class="gallery-item">
+    <img src="https://plus.unsplash.com/premium_photo-1674389991678-0836ca77c7f7?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm90b2dyYWYlQzMlQURhfGVufDB8fDB8fHww" alt="Cámara fotográfica" loading="lazy">
+    <figcaption>📷 Fotografía — Equipo y técnica</figcaption>
+  </figure>
+  <figure class="gallery-item">
+    <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=400&h=300&fit=crop" alt="Proyector de cine" loading="lazy">
+    <figcaption>🎬 Animación — Cine y movimiento</figcaption>
+  </figure>
+  <figure class="gallery-item">
+    <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZWRpY2klQzMlQjNuJTIwdmlkZW98ZW58MHx8MHx8fDA%3D" alt="Edición de video" loading="lazy">
+    <figcaption>🖥️ Edición — Postproducción digital</figcaption>
+  </figure>
+  <figure class="gallery-item">
+    <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=400&h=300&fit=crop" alt="Luz natural" loading="lazy">
+    <figcaption>💡 Iluminación — La luz como protagonista</figcaption>
+  </figure>
+  <figure class="gallery-item">
+    <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&h=300&fit=crop" alt="Estudio de grabación" loading="lazy">
+    <figcaption>🎞️ Stop Motion — Creatividad frame a frame</figcaption>
+  </figure>
+  <figure class="gallery-item">
+    <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=300&fit=crop" alt="Software de edición" loading="lazy">
+    <figcaption>✂️ Herramientas — Software de edición</figcaption>
+  </figure>
+</div>
+
+<div class="gallery-upload">
+  <h2>📸 Agregar imagen a la galería</h2>
+  <p class="gallery-hint">Publica una imagen con descripción. Se guardará en tu navegador.</p>
+  <form id="gallery-form">
+    <div class="form-row">
+      <div class="form-group">
+        <label for="gallery-url">URL de la imagen</label>
+        <input type="url" id="gallery-url" required placeholder="https://ejemplo.com/imagen.jpg">
+      </div>
+      <div class="form-group">
+        <label for="gallery-caption">Descripción</label>
+        <input type="text" id="gallery-caption" required placeholder="Ej: Mi proyecto de stop motion">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="gallery-category">Categoría</label>
+      <select id="gallery-category">
+        <option value="Fotografía">Fotografía</option>
+        <option value="Animación">Animación</option>
+        <option value="Edición">Edición</option>
+      </select>
+    </div>
+    <div class="form-actions">
+      <button type="submit" class="btn">Agregar a galería</button>
+    </div>
+  </form>
+</div>
+
+<div class="gallery-grid gallery-user" id="user-gallery"></div>

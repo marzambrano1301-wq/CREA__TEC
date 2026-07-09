@@ -1,0 +1,110 @@
+<!-- Partial: no abrir directamente. Usa /index.html en la raíz del proyecto -->
+<h2 class="page-headline">
+  Última hora en creación audiovisual
+  <span>Fotografía · Animación · Edición</span>
+</h2>
+
+<p class="lead-text">
+  Bienvenido al periódico digital de nuestro aprendizaje SENA. Aquí publicamos noticias, artículos y descubrimientos sobre las fases esenciales de los proyectos audiovisuales.
+</p>
+
+<div class="columns" id="home-content">
+  <article class="article article-featured">
+    <div class="article-meta"><span class="tag">Fotografía</span> <span class="author">Redacción SENA</span></div>
+    <h3 class="article-title">La luz: el pincel invisible del fotógrafo</h3>
+    <div class="article-body">
+      <p>En el mundo de la fotografía, la luz no es solo un recurso técnico: es el lenguaje con el que contamos historias. Durante nuestro aprendizaje en el SENA, descubrimos que dominar la iluminación —natural o artificial— transforma una imagen común en una obra memorable.</p>
+      <p>El ISO, la velocidad de obturación y el encuadre trabajan en conjunto, pero sin luz adecuada, ningún ajuste salva la composición. Como decía un maestro: "Fotografiar es escribir con luz".</p>
+    </div>
+  </article>
+
+  <article class="article">
+    <div class="article-meta"><span class="tag">Animación</span> <span class="author">Equipo Creativo</span></div>
+    <h3 class="article-title">24 cuadros por segundo: la magia del movimiento</h3>
+    <div class="article-body">
+      <p>Los FPS definen cuántos fotogramas vemos cada segundo. A 24 fps, el ojo humano percibe fluidez. En stop motion, cada cuadro es una foto individual que cobra vida.</p>
+    </div>
+  </article>
+
+  <article class="article">
+    <div class="article-meta"><span class="tag">Edición</span> <span class="author">Estudio Digital</span></div>
+    <h3 class="article-title">Capas: el superpoder del editor</h3>
+    <div class="article-body">
+      <p>Las capas permiten trabajar cada elemento por separado. Brillo, contraste, recorte y filtros se aplican sin destruir el original. Herramientas como GIMP y Photoshop son nuestros aliados diarios.</p>
+    </div>
+  </article>
+
+  <article class="article">
+    <div class="article-meta"><span class="tag">Fotografía</span> <span class="author">Redacción</span></div>
+    <h3 class="article-title">ISO: sensibilidad ante la oscuridad</h3>
+    <div class="article-body">
+      <p>Un ISO bajo (100-200) produce imágenes limpias en buena luz. Un ISO alto captura escenas oscuras, pero introduce ruido. El equilibrio es clave en cada toma.</p>
+    </div>
+  </article>
+
+  <article class="article">
+    <div class="article-meta"><span class="tag">Animación</span> <span class="author">Taller</span></div>
+    <h3 class="article-title">Stop Motion: paciencia que se convierte en arte</h3>
+    <div class="article-body">
+      <p>Mover un objeto milímetro a milímetro, fotografiar, repetir. Wallace y Gromit demostraron que la paciencia puede ser hilarante y conmovedora a la vez.</p>
+    </div>
+  </article>
+
+  <article class="article">
+    <div class="article-meta"><span class="tag">Edición</span> <span class="author">Postproducción</span></div>
+    <h3 class="article-title">Filtros y efectos con moderación</h3>
+    <div class="article-body">
+      <p>Un buen filtro realza; uno excesivo distrae. Aprendimos que la edición debe servir a la narrativa, no eclipsarla.</p>
+    </div>
+  </article>
+
+  <div class="publish-panel">
+    <h2>📰 Publicar en el periódico</h2>
+    <p class="publish-hint">
+      Escribe tu propia noticia, artículo o curiosidad sobre fotografía, animación o edición.
+    </p>
+    <div class="publish-toggle">
+      <button class="btn btn-outline" id="toggle-publish">+ Nueva publicación</button>
+    </div>
+    <form class="publish-form" id="publish-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="post-title">Titular</label>
+          <input type="text" id="post-title" required placeholder="Ej: Descubrimos el encuadre perfecto">
+        </div>
+        <div class="form-group">
+          <label for="post-category">Sección</label>
+          <select id="post-category" required>
+            <option value="Fotografía">Fotografía</option>
+            <option value="Animación">Animación</option>
+            <option value="Edición">Edición</option>
+            <option value="General">General</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="post-author">Autor</label>
+          <input type="text" id="post-author" required placeholder="Tu nombre">
+        </div>
+        <div class="form-group">
+          <label for="post-date">Fecha</label>
+          <input type="date" id="post-date">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="post-body">Contenido</label>
+        <textarea id="post-body" required placeholder="Escribe el cuerpo de tu artículo..."></textarea>
+      </div>
+      <div class="form-actions">
+        <button type="submit" class="btn">Publicar</button>
+        <button type="button" class="btn btn-outline" id="cancel-publish">Cancelar</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="posts-feed" id="user-posts">
+    <hr class="divider">
+    <h3 class="posts-feed-title">Publicaciones recientes</h3>
+  </div>
+</div>
